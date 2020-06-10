@@ -22,8 +22,8 @@ public class Clock : MonoBehaviour
     public ourTime GetTime()
     {
         Debug.Log(hourHand.transform.eulerAngles.z + " " + minHand.transform.eulerAngles.z);
-        int hours = (int)(360 - (hourHand.transform.eulerAngles.z + 0.5f + 360)% 360) / 30;
-        int minutes = (int)(360 - (minHand.transform.eulerAngles.z + 0.5f + 360)% 360) / 6;
+        int hours = (int)(360 - ((int)hourHand.transform.eulerAngles.z  + 360)% 360) / 30;
+        int minutes = (int)(360 - ((int)minHand.transform.eulerAngles.z  + 360)% 360) / 6;
         return (new ourTime(hours, minutes));
     }
 
