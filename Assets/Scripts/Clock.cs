@@ -1,37 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Clock : MonoBehaviour
 {
-    [SerializeField]GameObject hourHand = null;
-    [SerializeField]GameObject minHand = null;
+    // Scene References
+    [SerializeField] ClockHand hoursHand = null;
+    [SerializeField] ClockHand minHand = null;
 
-    public struct ourTime
+    // Represents time with integer hours and minutes.
+    public struct Time
     {
         public int hours;
         public int minutes;
 
-        public ourTime(int hours, int minutes)
+        public Time(int hours, int minutes)
         {
             this.hours = hours;
             this.minutes = minutes;
         }
     }
 
-    public ourTime GetTime()
-    {
-        Debug.Log(hourHand.transform.eulerAngles.z + " " + minHand.transform.eulerAngles.z);
-        int hours = (int)(360 - (hourHand.transform.eulerAngles.z + 0.5f + 360)% 360) / 30;
-        int minutes = (int)(360 - (minHand.transform.eulerAngles.z + 0.5f + 360)% 360) / 6;
-        return (new ourTime(hours, minutes));
-    }
+    // The time the clock's hands are currently pointing to.
+    public Time CurTime { get => new Time(hoursHand.Value, minHand.Value); }
 
     void Update()
     {
+        // DEBUG. Check the time the clock's hands are currently pointing to by pressing the X key.
         if (Input.GetKeyDown(KeyCode.X))
         {
-            Debug.Log(GetTime().hours + ":" + GetTime().minutes);
+            Debug.Log(CurTime.hours + ":" + CurTime.minutes);
         }
     }
 }
