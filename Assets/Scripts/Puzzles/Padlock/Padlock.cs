@@ -22,6 +22,10 @@ public class Padlock : MonoBehaviour
 
     public void AddDigit(string s)
     {
+        //while the padlock is locked, take in the answer combination
+        //the user is given and check if it is correct. if so, unlock
+        //the padlock and hide it from view. this will allow the user
+        //to go through the door with the padlock now open
         if (isUnlocked == false)
         {
             input += s;
