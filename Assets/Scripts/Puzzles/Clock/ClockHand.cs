@@ -5,6 +5,8 @@ public class ClockHand : MonoBehaviour
     // Inspector Variables
     [SerializeField] bool isHoursHand = false;
 
+    [HideInInspector] public bool operatable = true;
+
     // Returns the time the hand is currently indicating.
     public int Value
     {
@@ -24,6 +26,9 @@ public class ClockHand : MonoBehaviour
     void OnMouseDown()
     {
         // Rotates the hand one tick clockwise.
-        transform.eulerAngles = new Vector3(0, 0, (transform.rotation.eulerAngles.z - 30));
+        if (operatable)
+        {
+            transform.eulerAngles = new Vector3(0, 0, (transform.rotation.eulerAngles.z - 30));
+        }
     }
 }

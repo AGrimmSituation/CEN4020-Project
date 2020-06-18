@@ -6,6 +6,12 @@ public class Clock : MonoBehaviour
     [SerializeField] ClockHand hoursHand = null;
     [SerializeField] ClockHand minHand = null;
 
+    // Attributes
+    [SerializeField] int correctHours = 0;
+    [SerializeField] int correctMinutes = 0;
+
+    bool solved = false;
+
     // Represents time with integer hours and minutes.
     public struct Time
     {
@@ -28,6 +34,15 @@ public class Clock : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X))
         {
             Debug.Log(CurTime.hours + ":" + CurTime.minutes);
+        }
+
+        // If the time is correct, lock the clock.
+        if (CurTime.hours == correctHours && CurTime.minutes == correctMinutes && !solved)
+        {
+            hoursHand.operatable = false;
+            minHand.operatable = false;
+            gameObject.SetActive(false);
+            solved = true;
         }
     }
 }

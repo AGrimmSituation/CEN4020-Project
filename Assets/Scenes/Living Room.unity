@@ -170,6 +170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoursHand: {fileID: 1457565337}
   minHand: {fileID: 218621072}
+  correctHours: 10
+  correctMinutes: 30
 --- !u!1 &119919111
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isHoursHand: 0
+  operatable: 1
 --- !u!61 &218621073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2885,6 +2888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isHoursHand: 1
+  operatable: 1
 --- !u!212 &1457565338
 SpriteRenderer:
   m_ObjectHideFlags: 0
