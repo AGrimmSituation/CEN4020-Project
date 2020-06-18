@@ -6,9 +6,13 @@ public class Interactable : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (UItoShow)
+        if (UItoShow && interacting == false)
         {
             UItoShow.SetActive(true);
+            interacting = true;
         }
     }
+
+    public static bool interacting = false;
+
 }
