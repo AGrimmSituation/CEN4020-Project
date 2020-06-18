@@ -9,7 +9,6 @@ public class Hider : MonoBehaviour
         if (objectToHide)
         {
             objectToHide.SetActive(false);
-            Interactable.interacting = false;
         }
     }
 }
