@@ -4,7 +4,7 @@
  * If attached to a game object, forces no more than one child 
  * to be active at a time.
  * 
- * If more than one child is active , either the newly activated 
+ * If more than one child is active, either the newly activated 
  * child or the previously activated child, depending on 
  * designer preference, is immediately deactivated during 
  * the Update callback. 
