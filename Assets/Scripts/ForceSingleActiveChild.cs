@@ -5,7 +5,7 @@ public class ForceSingleActiveChild : MonoBehaviour
     [Tooltip("If two children are active at once, should the newly enabled child replace the old one?")]
     [SerializeField] bool replaceActiveChild = false;
 
-    public GameObject curActiveChild = null;
+    GameObject curActiveChild = null;
 
     void Update()
     {
