@@ -2,7 +2,7 @@
 
 /*
  * If attached to a game object, forces no more than one child 
- * to be active at a time.
+ * of said game object to be active at a time.
  * 
  * If more than one child is active, either the newly activated 
  * child or the previously activated child, depending on 
@@ -13,7 +13,7 @@
  */
 public class ForceSingleActiveChild : MonoBehaviour
 {
-    [Tooltip("If two children are active at once, should the newly enabled child replace the old one?")]
+    [Tooltip("If two children are active at once, should the newly activated child replace the old one?")]
     [SerializeField] bool replaceActiveChild = false;
 
     GameObject curActiveChild = null;
@@ -22,7 +22,7 @@ public class ForceSingleActiveChild : MonoBehaviour
     {
         bool activeChildFound = false;
 
-        // Iterates through this game object's children
+        // Iterates through this game object's children.
         foreach (Transform child in transform)
         {
             if (child.gameObject.activeSelf)
