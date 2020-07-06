@@ -731,7 +731,7 @@ GameObject:
   - component: {fileID: 252195405}
   - component: {fileID: 252195404}
   m_Layer: 0
-  m_Name: Right Door
+  m_Name: Door to Kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
