@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TvPuzzle : MonoBehaviour
 {
@@ -8,22 +7,25 @@ public class TvPuzzle : MonoBehaviour
     [SerializeField] TvKnob volumeKnob = null;
     [SerializeField] SpriteRenderer solvedChannel = null;
 
-    bool isSolved = false;
-
     [Header("Attributes")]
     [SerializeField] [Range(0, 10)] int correctVolume = 0;
     [SerializeField] [Range(0, 10)] int correctChannel = 0;
 
+    bool isSolved = false;
+    public bool IsSolved { get => isSolved; }
+
     void Update()
     {
-        if (!isSolved && 
-            channelKnob && channelKnob.CurState == correctChannel && 
-            volumeKnob && volumeKnob.CurState == correctVolume)
+        // Channel Knob and Volume Knob must be attached to check for solution.
+        if (!isSolved && channelKnob && volumeKnob)
         {
-            isSolved = true;
-            channelKnob.Deactivate();
-            volumeKnob.Deactivate();
-            solvedChannel.gameObject.SetActive(true);
+            if (channelKnob.CurState == correctChannel && volumeKnob && volumeKnob.CurState == correctVolume)
+            {
+                isSolved = true;
+                channelKnob.Deactivate();
+                volumeKnob.Deactivate();
+                solvedChannel.gameObject.SetActive(true);
+            }
         }
     }
 }
