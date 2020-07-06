@@ -22,20 +22,23 @@ public class FridgePuzzle : MonoBehaviour
     
     public void AddLetter(string s)
     {
-        //check combinations given by user for the right answer
-        //if yes, freeze the puzzle to show it was correct
+        //Check combinations given by user for the right answer.
+        //If yes, freeze the puzzle to show it was correct.
 
-        input += s;
-        if (input == answer)
+        if (!isSolved)
         {
-            isSolved = true;
-            //hides puzzle
-            gameObject.SetActive(false);
-            fridge.sprite = solvedFridge;
-        }
-        else if (input.Length >= 7)
-        {
-            input = "";
+            input += s;
+            if (input == answer)
+            {
+                isSolved = true;
+                //hides puzzle
+                gameObject.SetActive(false);
+                fridge.sprite = solvedFridge;
+            }
+            else if (input.Length >= 7)
+            {
+                input = "";
+            }
         }
 
         if (text)

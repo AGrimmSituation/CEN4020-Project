@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 70065174}
   - component: {fileID: 70065173}
   m_Layer: 0
-  m_Name: fridge_E
+  m_Name: E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1010,7 +1010,7 @@ GameObject:
   - component: {fileID: 545842800}
   - component: {fileID: 545842801}
   m_Layer: 0
-  m_Name: fridge_UIc
+  m_Name: Fridge UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1487,7 +1487,7 @@ GameObject:
   - component: {fileID: 1190390838}
   - component: {fileID: 1190390837}
   m_Layer: 0
-  m_Name: fridge_F
+  m_Name: F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1735,7 +1735,7 @@ PrefabInstance:
         type: 3}
       propertyPath: objectToHide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1214856510}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d39549de9f7e2e943ab9ba995987ece4, type: 3}
 --- !u!4 &1316286874 stripped
@@ -1838,7 +1838,7 @@ GameObject:
   - component: {fileID: 1465174730}
   - component: {fileID: 1465174729}
   m_Layer: 0
-  m_Name: fridge_N
+  m_Name: N
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2042,7 +2042,7 @@ GameObject:
   - component: {fileID: 1545536368}
   - component: {fileID: 1545536367}
   m_Layer: 0
-  m_Name: fridge_I
+  m_Name: I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2165,7 +2165,7 @@ GameObject:
   - component: {fileID: 1662624805}
   - component: {fileID: 1662624804}
   m_Layer: 0
-  m_Name: fridge_M
+  m_Name: M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2288,7 +2288,7 @@ GameObject:
   - component: {fileID: 1784923790}
   - component: {fileID: 1784923789}
   m_Layer: 0
-  m_Name: fridge_R
+  m_Name: R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2492,7 +2492,7 @@ GameObject:
   - component: {fileID: 1922555555}
   - component: {fileID: 1922555554}
   m_Layer: 0
-  m_Name: fridge_A
+  m_Name: A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
