@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FridgeMagnet : MonoBehaviour
 {
-    [SerializeField] Magnet puzzle = null;
+    [SerializeField] FridgePuzzle puzzle = null;
     [SerializeField] string letter = "1";
 
     //hopefully adds each letter to the answer

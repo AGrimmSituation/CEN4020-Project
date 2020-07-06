@@ -1,15 +1,19 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Magnet : MonoBehaviour
+public class FridgePuzzle : MonoBehaviour
 {
     [Header("Scene References")]
     [SerializeField] Text text = null;
-    [SerializeField] GameObject puzzle = null;
+    [SerializeField] Sprite solvedFridge = null;
+    [SerializeField] SpriteRenderer fridge = null;
 
     [Header("Attributes")]
     [SerializeField] string answer = "FIREMAN";
     string input = "";
+
+    bool isSolved = false;
+    public bool IsSolved { get => isSolved; }
 
     void Start()
     {
@@ -24,7 +28,10 @@ public class Magnet : MonoBehaviour
         input += s;
         if (input == answer)
         {
-            puzzle.SetActive(false);
+            isSolved = true;
+            //hides puzzle
+            gameObject.SetActive(false);
+            fridge.sprite = solvedFridge;
         }
         else if (input.Length >= 7)
         {
