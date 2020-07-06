@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 86225270}
   - component: {fileID: 86225271}
   m_Layer: 0
-  m_Name: Cabinet6
+  m_Name: Cabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -435,7 +435,7 @@ GameObject:
   - component: {fileID: 162568738}
   - component: {fileID: 162568739}
   m_Layer: 0
-  m_Name: Cabinet3
+  m_Name: Cabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -516,7 +516,7 @@ GameObject:
   - component: {fileID: 244301295}
   - component: {fileID: 244301294}
   m_Layer: 0
-  m_Name: Cabinet2
+  m_Name: Cabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -597,7 +597,7 @@ GameObject:
   - component: {fileID: 364075048}
   - component: {fileID: 364075049}
   m_Layer: 0
-  m_Name: HalfCab2
+  m_Name: Half Cab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -756,7 +756,7 @@ GameObject:
   - component: {fileID: 414170434}
   - component: {fileID: 414170433}
   m_Layer: 0
-  m_Name: Room1
+  m_Name: Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -848,7 +848,7 @@ GameObject:
   - component: {fileID: 467775262}
   - component: {fileID: 467775263}
   m_Layer: 0
-  m_Name: HalfCab1
+  m_Name: Half Cab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1093,7 +1093,7 @@ GameObject:
   - component: {fileID: 546709682}
   - component: {fileID: 546709683}
   m_Layer: 0
-  m_Name: fridge_unsolved
+  m_Name: Fridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1404,7 +1404,7 @@ GameObject:
   - component: {fileID: 1032701534}
   - component: {fileID: 1032701533}
   m_Layer: 0
-  m_Name: Cabinet1
+  m_Name: Cabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1613,7 +1613,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1214856511
 Transform:
   m_ObjectHideFlags: 0
@@ -1959,7 +1959,7 @@ GameObject:
   - component: {fileID: 1488878600}
   - component: {fileID: 1488878601}
   m_Layer: 0
-  m_Name: Cabinet4
+  m_Name: Cabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2409,7 +2409,7 @@ GameObject:
   - component: {fileID: 1792875571}
   - component: {fileID: 1792875572}
   m_Layer: 0
-  m_Name: Cabinet5
+  m_Name: Cabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2615,7 +2615,7 @@ GameObject:
   - component: {fileID: 2052873488}
   - component: {fileID: 2052873487}
   m_Layer: 0
-  m_Name: DoorToLivingRoom
+  m_Name: Door To Living Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
