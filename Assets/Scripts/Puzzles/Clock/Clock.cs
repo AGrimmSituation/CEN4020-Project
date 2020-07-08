@@ -10,6 +10,8 @@ public class Clock : MonoBehaviour
     [SerializeField] int correctHours = 0;
     [SerializeField] int correctMinutes = 0;
 
+    [SerializeField] GameObject door = null;
+
     bool solved = false;
 
     // Represents time with integer hours and minutes.
@@ -42,6 +44,8 @@ public class Clock : MonoBehaviour
             hoursHand.operatable = false;
             minHand.operatable = false;
             gameObject.SetActive(false);
+            //Enable the collider for the attached door, making it usable. Added 7/7/20 10:52PM
+            door.GetComponent<BoxCollider2D>().enabled = true;
             solved = true;
         }
     }
