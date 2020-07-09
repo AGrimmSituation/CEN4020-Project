@@ -41,12 +41,18 @@ public class Clock : MonoBehaviour
         // If the time is correct, lock the clock.
         if (CurTime.hours == correctHours && CurTime.minutes == correctMinutes && !solved)
         {
-            hoursHand.operatable = false;
-            minHand.operatable = false;
-            gameObject.SetActive(false);
-            //Enable the collider for the attached door, making it usable. Added 7/7/20 10:52PM
-            door.GetComponent<BoxCollider2D>().enabled = true;
-            solved = true;
+            SolveAndLock();
         }
+    }
+
+    public void SolveAndLock()
+    {
+        hoursHand.operatable = false;
+        minHand.operatable = false;
+        //Enable the collider for the attached door, making it usable. Added 7/7/20 10:52PM
+        door.GetComponent<BoxCollider2D>().enabled = true;
+        solved = true;
+        SavedState.clockSolved = true;
+        gameObject.SetActive(false);
     }
 }

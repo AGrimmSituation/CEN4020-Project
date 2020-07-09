@@ -26,11 +26,12 @@ public class TvPuzzle : MonoBehaviour
         }
     }
 
-    void SolveAndLock()
+    public void SolveAndLock()
     {
         isSolved = true;
         channelKnob.Deactivate();
         volumeKnob.Deactivate();
         solvedChannel.gameObject.SetActive(true);
+        SavedState.tvSolved = true;
     }
 }

@@ -31,10 +31,7 @@ public class Padlock : MonoBehaviour
             input += s;
             if (input == answer)
             {
-                isUnlocked = true;
-                door.GetComponent<BoxCollider2D>().enabled = true;
-                padlock.SetActive(false);
-                gameObject.SetActive(false);
+                SolveAndLock();
             }
             else if (input.Length >= 4)
             {
@@ -46,5 +43,14 @@ public class Padlock : MonoBehaviour
         {
             text.text = input;
         }
+    }
+
+    public void SolveAndLock()
+    {
+        isUnlocked = true;
+        door.GetComponent<BoxCollider2D>().enabled = true;
+        padlock.SetActive(false);
+        SavedState.livingRoomPadlockSolved = true;
+        gameObject.SetActive(false);
     }
 }

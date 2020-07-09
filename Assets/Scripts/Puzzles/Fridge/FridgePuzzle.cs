@@ -14,12 +14,6 @@ public class FridgePuzzle : MonoBehaviour
 
     bool isSolved = false;
     public bool IsSolved { get => isSolved; }
-
-    void Start()
-    {
-        //begin with an empty string
-        text.text = "";
-    }
     
     public void AddLetter(string s)
     {
@@ -31,12 +25,7 @@ public class FridgePuzzle : MonoBehaviour
             input += s;
             if (input == answer)
             {
-                //once solved: freeze and hide the puzzle,
-                //and replace the fridge sprite to the 
-                //corrected one in the scene
-                isSolved = true;
-                gameObject.SetActive(false);
-                fridge.sprite = solvedFridge;
+                SolveAndLock();
             }
             else if (input.Length >= 7)
             {
@@ -45,12 +34,24 @@ public class FridgePuzzle : MonoBehaviour
                 //reset and clear it so they can try again
                 input = "";
             }
-        }
 
-        if (text)
-        {
-            text.text = input;
+            if (text)
+            {
+                text.text = input;
+            }
         }
+    }
+
+    public void SolveAndLock()
+    {
+        //once solved: freeze and hide the puzzle,
+        //and replace the fridge sprite to the 
+        //corrected one in the scene
+        isSolved = true;
+        fridge.sprite = solvedFridge;
+        text.text = answer;
+        SavedState.fridgeSolved = true;
+        gameObject.SetActive(false);
     }
 }
 

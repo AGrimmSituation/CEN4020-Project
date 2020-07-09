@@ -52,12 +52,13 @@ public class CardPadlock : MonoBehaviour
         }
     }
 
-    void SolveAndLock()
+    public void SolveAndLock()
     {
         input = answer;
         isUnlocked = true;
         door.GetComponent<BoxCollider2D>().enabled = true;
         padlock.SetActive(false);
+        SavedState.bedroomPadlockSolved = true;
         gameObject.SetActive(false);
     }
 }

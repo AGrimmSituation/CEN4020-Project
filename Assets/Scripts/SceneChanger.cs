@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class SceneChanger : MonoBehaviour
 {
     //Apply to a door object
