@@ -17,6 +17,7 @@ public class FridgePuzzle : MonoBehaviour
 
     void Start()
     {
+        //begin with an empty string
         text.text = "";
     }
     
@@ -30,13 +31,18 @@ public class FridgePuzzle : MonoBehaviour
             input += s;
             if (input == answer)
             {
+                //once solved: freeze and hide the puzzle,
+                //and replace the fridge sprite to the 
+                //corrected one in the scene
                 isSolved = true;
-                //hides puzzle
                 gameObject.SetActive(false);
                 fridge.sprite = solvedFridge;
             }
             else if (input.Length >= 7)
             {
+                //the correct answer is only 7 chars long.
+                //if the user's answer is >= 7 chars,
+                //reset and clear it so they can try again
                 input = "";
             }
         }
