@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Padlock2 : MonoBehaviour
+public class CardPadlock : MonoBehaviour
 {
     //Code from previous padlock implementation
     //edited to work with padlock for this scene
@@ -38,10 +38,7 @@ public class Padlock2 : MonoBehaviour
             input += s;
             if(input == answer)
             {
-                isUnlocked = true;
-                door.GetComponent<BoxCollider2D>().enabled = true;
-                padlock.SetActive(false);
-                gameObject.SetActive(false);
+                SolveAndLock();
             }
             else if (input.Length >= 10)
             {
@@ -53,5 +50,14 @@ public class Padlock2 : MonoBehaviour
         {
             text.text = input;
         }
+    }
+
+    void SolveAndLock()
+    {
+        input = answer;
+        isUnlocked = true;
+        door.GetComponent<BoxCollider2D>().enabled = true;
+        padlock.SetActive(false);
+        gameObject.SetActive(false);
     }
 }

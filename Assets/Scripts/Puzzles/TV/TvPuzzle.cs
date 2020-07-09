@@ -21,11 +21,16 @@ public class TvPuzzle : MonoBehaviour
         {
             if (channelKnob.CurState == correctChannel && volumeKnob && volumeKnob.CurState == correctVolume)
             {
-                isSolved = true;
-                channelKnob.Deactivate();
-                volumeKnob.Deactivate();
-                solvedChannel.gameObject.SetActive(true);
+                SolveAndLock();
             }
         }
+    }
+
+    void SolveAndLock()
+    {
+        isSolved = true;
+        channelKnob.Deactivate();
+        volumeKnob.Deactivate();
+        solvedChannel.gameObject.SetActive(true);
     }
 }

@@ -12,6 +12,13 @@ public class SceneChanger : MonoBehaviour
 
     void OnMouseDown()
     {
-        SceneManager.LoadScene(sceneName);
+        if (Application.CanStreamedLevelBeLoaded(sceneName))
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+        else
+        {
+            Debug.Log("Scene \"" + sceneName + "\" has not been added to Build Settings.");
+        }
     }
 }

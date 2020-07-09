@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class PadlockButton2 : MonoBehaviour
+public class CardPadlockButton : MonoBehaviour
 {
     //Code used from previous padlock button implementation
 
-    [SerializeField] Padlock2 padlock = null;
+    [SerializeField] CardPadlock padlock = null;
     [SerializeField] string letter = "1";
 
     //each time the user clicks on a letter,
