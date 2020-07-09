@@ -33,10 +33,10 @@ public class Padlock2 : MonoBehaviour
         //from view. this allows the user to go through the door
         //with the padlock now open
 
-        if(isUnlocked==false)
+        if(isUnlocked == false)
         {
             input += s;
-            if(input==answer)
+            if(input == answer)
             {
                 isUnlocked = true;
                 door.GetComponent<BoxCollider2D>().enabled = true;
@@ -49,7 +49,7 @@ public class Padlock2 : MonoBehaviour
             }
         }
 
-        if(text)
+        if (text)
         {
             text.text = input;
         }

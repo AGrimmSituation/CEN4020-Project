@@ -5,7 +5,7 @@ public class PadlockButton2 : MonoBehaviour
     //Code used from previous padlock button implementation
 
     [SerializeField] Padlock2 padlock = null;
-    [SerializeField] string letter = "a";
+    [SerializeField] string letter = "1";
 
     //each time the user clicks on a letter,
     //the letter will be sent to the "Padlock2"
