@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bedroom.unity
     guid: 6e0dc531148eadc4a8b1837dbddbabc2
+  - enabled: 1
+    path: Assets/Scenes/Loft.unity
+    guid: 6e3501e6aad7a0240b81c005558f132f
+  - enabled: 1
+    path: Assets/Scenes/Bathroom.unity
+    guid: 59ec7bae63004c247bb37a7fb30af6a7
   m_configObjects: {}
