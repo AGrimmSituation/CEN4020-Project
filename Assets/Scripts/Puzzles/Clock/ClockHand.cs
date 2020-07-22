@@ -5,7 +5,7 @@ public class ClockHand : MonoBehaviour
     // Inspector Variables
     [SerializeField] bool isHoursHand = false;
 
-    [HideInInspector] public bool operatable = true;
+    bool operatable = true;
 
     // Returns the time the hand is currently indicating.
     public int Value
