@@ -31,4 +31,10 @@ public class ClockHand : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 0, (transform.rotation.eulerAngles.z - 30));
         }
     }
+
+    public void SetAndLock (int time)
+    {
+        operatable = false;
+        transform.eulerAngles = new Vector3(0, 0, 360 - (time * (isHoursHand ? 1 : 5)) * 30);
+    }
 }

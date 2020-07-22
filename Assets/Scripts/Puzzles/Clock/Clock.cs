@@ -47,8 +47,8 @@ public class Clock : MonoBehaviour
 
     public void SolveAndLock()
     {
-        hoursHand.operatable = false;
-        minHand.operatable = false;
+        hoursHand.SetAndLock(correctHours);
+        minHand.SetAndLock(correctMinutes);
         //Enable the collider for the attached door, making it usable. Added 7/7/20 10:52PM
         door.GetComponent<BoxCollider2D>().enabled = true;
         solved = true;
