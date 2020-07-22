@@ -29,8 +29,8 @@ public class TvPuzzle : MonoBehaviour
     public void SolveAndLock()
     {
         isSolved = true;
-        channelKnob.Deactivate();
-        volumeKnob.Deactivate();
+        channelKnob.SetAndLock(correctChannel);
+        volumeKnob.SetAndLock(correctVolume);
         solvedChannel.gameObject.SetActive(true);
         SavedState.tvSolved = true;
     }

@@ -17,8 +17,9 @@ public class TvKnob : MonoBehaviour
         }
     }
 
-    public void Deactivate()
+    public void SetAndLock(int value)
     {
         operatable = false;
+        transform.eulerAngles = new Vector3(0, 0, 360 * ((float)value / (float)maxState));
     }
 }
