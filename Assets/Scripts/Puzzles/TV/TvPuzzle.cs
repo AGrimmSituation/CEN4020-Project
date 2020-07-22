@@ -32,5 +32,6 @@ public class TvPuzzle : MonoBehaviour
         channelKnob.SetAndLock(correctChannel);
         volumeKnob.SetAndLock(correctVolume);
         solvedChannel.gameObject.SetActive(true);
+        SavedState.tvSolved = true;
     }
 }

@@ -52,6 +52,7 @@ public class Clock : MonoBehaviour
         //Enable the collider for the attached door, making it usable. Added 7/7/20 10:52PM
         door.GetComponent<BoxCollider2D>().enabled = true;
         solved = true;
+        SavedState.clockSolved = true;
         gameObject.SetActive(false);
     }
 }

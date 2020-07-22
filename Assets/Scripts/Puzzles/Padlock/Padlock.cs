@@ -50,6 +50,7 @@ public class Padlock : MonoBehaviour
         isUnlocked = true;
         door.GetComponent<BoxCollider2D>().enabled = true;
         padlock.SetActive(false);
+        SavedState.livingRoomPadlockSolved = true;
         gameObject.SetActive(false);
     }
 }

@@ -50,6 +50,7 @@ public class FridgePuzzle : MonoBehaviour
         isSolved = true;
         fridge.sprite = solvedFridge;
         text.text = answer;
+        SavedState.fridgeSolved = true;
         gameObject.SetActive(false);
     }
 }
