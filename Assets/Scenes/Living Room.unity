@@ -729,7 +729,7 @@ PrefabInstance:
         type: 3}
       propertyPath: objectToHide
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1264917738}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d39549de9f7e2e943ab9ba995987ece4, type: 3}
 --- !u!1 &252195401
