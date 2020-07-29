@@ -7,4 +7,5 @@ public static class SavedState
     public static bool fridgeSolved = false;
     public static bool tvSolved = false;
     public static bool bedroomPadlockSolved = false;
+    public static string lastScene = "Living Room";
 }
