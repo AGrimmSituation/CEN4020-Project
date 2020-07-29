@@ -18,7 +18,7 @@ public class TvPuzzle : MonoBehaviour
 
     void Start()
     {
-        sound = GetComponent<AudioSource>();
+        sound2 = GetComponent<AudioSource>();
     }
 
     void Update()

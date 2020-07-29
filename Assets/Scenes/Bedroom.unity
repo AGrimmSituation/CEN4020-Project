@@ -4222,7 +4222,6 @@ GameObject:
   - component: {fileID: 1282526602}
   - component: {fileID: 1282526604}
   - component: {fileID: 1282526603}
-  - component: {fileID: 1282526606}
   - component: {fileID: 1282526605}
   m_Layer: 0
   m_Name: TV Puzzle
@@ -4316,6 +4315,8 @@ MonoBehaviour:
   solvedChannel: {fileID: 291836361}
   correctVolume: 3
   correctChannel: 7
+  sound1: {fileID: 1282526604}
+  sound2: {fileID: 1282526605}
 --- !u!114 &1282526603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4437,9 +4438,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c02c654a019ffa7419c8cf48e6f9f006, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.696
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4521,19 +4522,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1282526606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1282526599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 705f8797992f8b54cbc8c2f37734ad4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sound: {fileID: 1282526605}
 --- !u!1 &1326699523
 GameObject:
   m_ObjectHideFlags: 0
