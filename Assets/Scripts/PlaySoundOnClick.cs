@@ -13,6 +13,9 @@ public class PlaySoundOnClick : MonoBehaviour
 
     void OnMouseDown()
     {
-        sound.PlayOneShot(sound.clip);
+	if(PauseMenu.paused == false)
+	{
+        	sound.PlayOneShot(sound.clip);
+	}
     }
 }
