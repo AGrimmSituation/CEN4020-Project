@@ -11,9 +11,10 @@ public class SceneChanger : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (Application.CanStreamedLevelBeLoaded(sceneName))
+        if (Application.CanStreamedLevelBeLoaded(sceneName) && PauseMenu.paused == false)
         {
             SceneManager.LoadScene(sceneName);
+            SavedState.lastScene = sceneName;
         }
         else
         {
