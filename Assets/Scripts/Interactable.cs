@@ -9,7 +9,7 @@ public class Interactable : MonoBehaviour
     //if not, nothing will happen
     void OnMouseDown()
     {
-        if (UItoShow)
+        if (UItoShow && PauseMenu.paused == false)
         {
             UItoShow.SetActive(true);
         }
