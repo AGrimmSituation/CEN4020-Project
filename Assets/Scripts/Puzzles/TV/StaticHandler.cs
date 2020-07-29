@@ -5,6 +5,7 @@ using UnityEngine;
 public class StaticHandler : MonoBehaviour
 {
     [SerializeField]AudioSource sound = null;
+    [SerializeField]SpriteRenderer solvedChannel = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,11 +16,17 @@ public class StaticHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(SavedState.tvSolved == true)
+        if(solvedChannel.gameObject.activeSelf == true)
         {
-            sound.playOnAwake = false;
-            sound.loop = false;
             sound.Stop();
+        }
+    }
+
+    void OnMouseDown()
+    {
+        if(solvedChannel.gameObject.activeSelf == false)
+        {
+            sound.PlayOneShot(sound.clip);
         }
     }
 }
