@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿//Container class for tracking game save data.
+
+using UnityEngine;
 
 public static class SavedState
 {

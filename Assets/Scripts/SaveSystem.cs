@@ -4,7 +4,8 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
-
+	//Erase all saved data by setting all puzzles to unsolved and locking doors.
+	//Set the current scene to be the living room
 	public static void NewGame()
 	{
 		BinaryFormatter formatter = new BinaryFormatter();
@@ -24,6 +25,7 @@ public static class SaveSystem
 		stream.Close();
 	}
 
+	//Save all progress on puzzles, unlocked doors, and most recently visited room.
 	public static void SaveGame()
 	{
 		BinaryFormatter formatter = new BinaryFormatter();
@@ -36,6 +38,7 @@ public static class SaveSystem
 		stream.Close();
 	}
 
+	//Reload the game from the most recent call of SaveGame().
 	public static void LoadGame()
 	{
 		string path = Application.persistentDataPath + "/savedGame";

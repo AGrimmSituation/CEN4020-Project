@@ -9,7 +9,7 @@ public class CloseGame : MonoBehaviour
     //Click "Quit" to trigger Quit function.
     void OnMouseDown()
     {
-        if (MenuItem)
+        if (MenuItem)              //Attempt to quit game if menu button is clicked.
             Application.Quit();
     }
 }
