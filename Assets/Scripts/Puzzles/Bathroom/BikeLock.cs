@@ -1,5 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +11,8 @@ public class BikeLock : MonoBehaviour
     [Header ("Attributes")]
     [SerializeField] string answer = "531";
     string input = "";
+    bool isUnlocked = false;
+    public bool IsUnlocked { get => isUnlocked;}
 
     void Start()
     {
@@ -28,11 +28,31 @@ public class BikeLock : MonoBehaviour
 
         //if the input size > 3, reset it
         //if you want to change the length, feel free
+
+	if(isUnlocked == false)
+	{
+	    input+=str;
+	    if(input == answer)
+	    {
+		SolveAndOpen();
+	    }
+	    else if (input.Length >= 3)
+	    {
+		input = "";
+	    }
+	}
+	if(text)
+	{
+	    text.text = input;
+	}
     }
 
     public void SolveAndOpen()
     {
         //once solved, unlock the bikelock
         //and allow the cabinet to be opened
+	isUnlocked=true;
+	bikelock.SetActive(false);
+	cabinet.GetComponent<BoxCollider2D>().enabled = true;
     }
 }
