@@ -4690,7 +4690,7 @@ MonoBehaviour:
   solvedChannel: {fileID: 291836361}
   roomTVScreen: {fileID: 1499610822}
   correctVolume: 3
-  correctChannel: 7
+  correctChannel: 5
 --- !u!114 &1282526603
 MonoBehaviour:
   m_ObjectHideFlags: 0
