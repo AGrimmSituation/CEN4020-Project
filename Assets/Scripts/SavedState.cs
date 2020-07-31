@@ -2,6 +2,8 @@
 
 using UnityEngine;
 
+//A static instance of the games data that will hold the information
+//while the user is playing the game
 public static class SavedState
 {
     public static bool livingRoomPadlockSolved = false;

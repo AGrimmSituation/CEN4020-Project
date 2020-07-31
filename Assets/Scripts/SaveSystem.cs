@@ -17,6 +17,8 @@ public static class SaveSystem
 		SavedState.fridgeSolved = false;
 		SavedState.tvSolved = false;
 		SavedState.bedroomPadlockSolved = false;
+		SavedState.bathroomLockSolved = false;
+ 		SavedState.bookcaseSolved = false;
 		SavedState.lastScene = "Living Room";
 
 		StateData data = new StateData();
@@ -55,6 +57,8 @@ public static class SaveSystem
 			SavedState.fridgeSolved = data.fridge;
 			SavedState.tvSolved = data.tv;
 			SavedState.bedroomPadlockSolved = data.brPadlock;
+			SavedState.bathroomLockSolved = data.bathLock;
+			SavedState.bookcaseSolved = data.loftSolved;
 			SavedState.lastScene = data.lastScene;
 
 			return;
