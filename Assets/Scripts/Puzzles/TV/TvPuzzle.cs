@@ -6,6 +6,7 @@ public class TvPuzzle : MonoBehaviour
     [SerializeField] TvKnob channelKnob = null;
     [SerializeField] TvKnob volumeKnob = null;
     [SerializeField] SpriteRenderer solvedChannel = null;
+    [SerializeField]GameObject roomTVScreen = null;
 
     [Header("Attributes")]
     [SerializeField] [Range(0, 10)] int correctVolume = 0;
@@ -32,6 +33,7 @@ public class TvPuzzle : MonoBehaviour
         channelKnob.SetAndLock(correctChannel);
         volumeKnob.SetAndLock(correctVolume);
         solvedChannel.gameObject.SetActive(true);
+        roomTVScreen.gameObject.SetActive(true);
         SavedState.tvSolved = true;
     }
 }
