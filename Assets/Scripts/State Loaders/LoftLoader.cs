@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class LoftLoader : MonoBehaviour
 {
+    [SerializeField]BookcasePuzzle bookcasePuzzle = null;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(SavedState.bookcaseSolved)
+        {
+            bookcasePuzzle.SolveAndLock();
+        }
     }
 }

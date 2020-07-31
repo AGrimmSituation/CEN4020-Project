@@ -10,5 +10,6 @@ public static class SavedState
     public static bool tvSolved = false;
     public static bool bedroomPadlockSolved = false;
     public static bool bathroomLockSolved = false;
+    public static bool bookcaseSolved = false;
     public static string lastScene = "Living Room";
 }

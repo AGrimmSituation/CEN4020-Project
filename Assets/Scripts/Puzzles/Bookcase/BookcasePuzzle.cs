@@ -16,10 +16,17 @@ public class BookcasePuzzle : MonoBehaviour
     {
         if(correctBook) //If the correct book is clicked, reveal the secret door
         {
-            bookcase1.gameObject.SetActive(false);
-            bookcase2.gameObject.SetActive(true);
-            hiddenDoor.gameObject.SetActive(true);
-            bookSound.PlayOneShot(bookSound.clip);
+            SolveAndLock();
         }
+    }
+
+    public void SolveAndLock()
+    {
+        //Keep bookcase in place
+        bookcase1.gameObject.SetActive(false);
+        bookcase2.gameObject.SetActive(true);
+        hiddenDoor.gameObject.SetActive(true);
+        bookSound.PlayOneShot(bookSound.clip);
+        SavedState.bookcaseSolved = true;
     }
 }
