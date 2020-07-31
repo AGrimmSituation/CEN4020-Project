@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class BathroomLoader : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] BikeLock bikeLock = null;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (SavedState.bathroomLockSolved)
+        {
+            bikeLock.SolveAndOpen();
+        }
     }
 }

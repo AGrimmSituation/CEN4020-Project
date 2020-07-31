@@ -263,7 +263,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &248919085
 Transform:
   m_ObjectHideFlags: 0
@@ -295,10 +295,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 599f6842d3aff8247a07124c8df7d0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cabinet: {fileID: 1950704967}
+  cabinet: {fileID: 671139097}
   bikelock: {fileID: 862355849}
   text: {fileID: 761058549}
-  answer: 531
+  answer: 5 3 1
 --- !u!212 &248919087
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -335,8 +335,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1312434969
+  m_SortingLayer: 1
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 97611a3b1fc211f428ae75e3b58f0577, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -441,6 +441,7 @@ GameObject:
   - component: {fileID: 306935140}
   - component: {fileID: 306935141}
   - component: {fileID: 306935142}
+  - component: {fileID: 306935143}
   m_Layer: 0
   m_Name: Button 3
   m_TagString: Untagged
@@ -498,8 +499,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1312434969
+  m_SortingLayer: 1
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: ea612ccf6ef27e442809c3e793f8bfb5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -525,6 +526,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bikelock: {fileID: 248919086}
+  digit: 2
+--- !u!61 &306935143
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306935139}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.15, y: 5.2}
+    newSize: {x: 3.15, y: 5.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.15, y: 5.2}
+  m_EdgeRadius: 0
 --- !u!1 &325917047
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +660,7 @@ PrefabInstance:
     - target: {fileID: 2314358285075637358, guid: d39549de9f7e2e943ab9ba995987ece4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.904411
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2314358285075637358, guid: d39549de9f7e2e943ab9ba995987ece4,
         type: 3}
@@ -826,7 +854,7 @@ PrefabInstance:
     - target: {fileID: 2314358285075637358, guid: d39549de9f7e2e943ab9ba995987ece4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.904411
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2314358285075637358, guid: d39549de9f7e2e943ab9ba995987ece4,
         type: 3}
@@ -1370,6 +1398,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 731853017}
+  - component: {fileID: 731853018}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -1396,6 +1425,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &731853018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731853016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 985faa2f54caffd48a3edaf1fb4419be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replaceActiveChild: 0
 --- !u!1 &751857726
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,6 +1449,7 @@ GameObject:
   - component: {fileID: 751857727}
   - component: {fileID: 751857729}
   - component: {fileID: 751857728}
+  - component: {fileID: 751857730}
   m_Layer: 0
   m_Name: Button 1
   m_TagString: Untagged
@@ -1441,6 +1484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bikelock: {fileID: 248919086}
+  digit: 0
 --- !u!212 &751857729
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1477,8 +1521,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1312434969
+  m_SortingLayer: 1
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: ea612ccf6ef27e442809c3e793f8bfb5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1491,6 +1535,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &751857730
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751857726}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.15, y: 5.2}
+    newSize: {x: 3.15, y: 5.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.15, y: 5.2}
+  m_EdgeRadius: 0
 --- !u!1 &761058547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,7 +1588,7 @@ RectTransform:
   m_GameObject: {fileID: 761058547}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 1}
   m_Children: []
   m_Father: {fileID: 1127971483}
   m_RootOrder: 0
@@ -1549,7 +1619,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 9
+    m_FontSize: 236
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1560,7 +1630,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 000
+  m_Text: 0 0 0
 --- !u!222 &761058550
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1663,7 +1733,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -1722,7 +1792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfbdca9f5f73a0849963a68ce935f49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Living Room
+  sceneName: Bedroom
 --- !u!61 &878708539
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2097,7 +2167,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1312434969
   m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!1 &1183728352
@@ -2188,11 +2258,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 248919085}
     m_Modifications:
-    - target: {fileID: 1010590495165155849, guid: d39549de9f7e2e943ab9ba995987ece4,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 2314358285075637358, guid: d39549de9f7e2e943ab9ba995987ece4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2206,7 +2271,7 @@ PrefabInstance:
     - target: {fileID: 2314358285075637358, guid: d39549de9f7e2e943ab9ba995987ece4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -41.490883
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2314358285075637358, guid: d39549de9f7e2e943ab9ba995987ece4,
         type: 3}
@@ -2263,6 +2328,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hider
       objectReference: {fileID: 0}
+    - target: {fileID: 7062964971420433143, guid: d39549de9f7e2e943ab9ba995987ece4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8043601810621914939, guid: d39549de9f7e2e943ab9ba995987ece4,
         type: 3}
       propertyPath: objectToHide
@@ -2301,7 +2371,7 @@ PrefabInstance:
     - target: {fileID: 2314358285075637358, guid: d39549de9f7e2e943ab9ba995987ece4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.31794167
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2314358285075637358, guid: d39549de9f7e2e943ab9ba995987ece4,
         type: 3}
@@ -2635,7 +2705,7 @@ PrefabInstance:
     - target: {fileID: 2314358285075637358, guid: d39549de9f7e2e943ab9ba995987ece4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.31794205
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2314358285075637358, guid: d39549de9f7e2e943ab9ba995987ece4,
         type: 3}
@@ -2716,6 +2786,7 @@ GameObject:
   - component: {fileID: 1657407733}
   - component: {fileID: 1657407734}
   - component: {fileID: 1657407735}
+  - component: {fileID: 1657407736}
   m_Layer: 0
   m_Name: Button 2
   m_TagString: Untagged
@@ -2773,8 +2844,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1312434969
+  m_SortingLayer: 1
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: ea612ccf6ef27e442809c3e793f8bfb5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2800,6 +2871,77 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bikelock: {fileID: 248919086}
+  digit: 1
+--- !u!61 &1657407736
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657407732}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.15, y: 5.2}
+    newSize: {x: 3.15, y: 5.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.15, y: 5.2}
+  m_EdgeRadius: 0
+--- !u!1 &1802124213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1802124214}
+  - component: {fileID: 1802124216}
+  m_Layer: 0
+  m_Name: BathroomLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1802124214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802124213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.338614, y: -0.26717564, z: -42.56114}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1802124216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802124213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5535ba08278b922468373832e8d973f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bikeLock: {fileID: 248919086}
 --- !u!1 &1855907635
 GameObject:
   m_ObjectHideFlags: 0

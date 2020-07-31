@@ -9,43 +9,50 @@ public class BikeLock : MonoBehaviour
     [SerializeField] Text text = null;
 
     [Header ("Attributes")]
-    [SerializeField] string answer = "531";
-    string input = "";
+    [SerializeField] string answer = "5 3 1";
+
+    int leftDigit = 0;
+    int middleDigit = 0;
+    int rightDigit = 0;
+
+    public string CurState { get => leftDigit + " " + middleDigit + " " + rightDigit; }
 
     bool isUnlocked = false;
-    public bool IsUnlocked { get => isUnlocked;}
+    public bool IsUnlocked { get => isUnlocked; }
 
     void Start()
     {
         //text will show the different numbers
         //on the bikelock
-        text.text = "";
+        text.text = "0 0 0";
     }
 
-    public void AddDigit(string str)
+    public enum Digit { Left, Middle, Right };
+    public void IncrementDigit(Digit digit)
     {
-        //while unsolved, compile answers
-        //and check if they're correct
-
-        //if the input size > 3, reset it
-        //if you want to change the length, feel free
-
-	if(isUnlocked == false)
-	{
-	    input += str;
-
-	    if(input == answer)
-	    {
-		    SolveAndOpen();
-	    }
-	    else if (input.Length >= 3)
-	    {
-	    	input = "";
-	    }
-	}
-        if(text)
+        if (!isUnlocked)
         {
-            text.text = input;
+            // increment the digit
+            switch (digit)
+            {
+                case Digit.Left:
+                    leftDigit = (leftDigit + 1) % 10;
+                    break;
+                case Digit.Middle:
+                    middleDigit = (middleDigit + 1) % 10;
+                    break;
+                case Digit.Right:
+                    rightDigit = (rightDigit + 1) % 10;
+                    break;
+            }
+
+            text.text = leftDigit + " " + middleDigit + " " + rightDigit;
+
+            // check for solution
+            if (CurState == answer)
+            {
+                SolveAndOpen();
+            }
         }
     }
 
@@ -56,6 +63,7 @@ public class BikeLock : MonoBehaviour
         isUnlocked = true;
         bikelock.SetActive(false);
         cabinet.GetComponent<BoxCollider2D>().enabled = true;
+        gameObject.SetActive(false);
         SavedState.bathroomLockSolved = true;
     }
 }
