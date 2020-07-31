@@ -1559,6 +1559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clockPuzzle: {fileID: 105814727}
   padlockPuzzle: {fileID: 1264917741}
+  loftDoor: {fileID: 1785357445}
 --- !u!4 &504562974
 Transform:
   m_ObjectHideFlags: 0
