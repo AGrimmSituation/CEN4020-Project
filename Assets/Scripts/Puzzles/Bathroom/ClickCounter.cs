@@ -5,7 +5,7 @@ using UnityEngine;
 public class ClickCounter : MonoBehaviour
 {
     [SerializeField] BikeLock bikelock = null;
-    [SerializeField] string digit = "1";
+ //   [SerializeField] string digit = "1";
     int counter = 0;
 
     void OnMouseDown()

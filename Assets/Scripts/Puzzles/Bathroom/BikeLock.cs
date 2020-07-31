@@ -11,6 +11,7 @@ public class BikeLock : MonoBehaviour
     [Header ("Attributes")]
     [SerializeField] string answer = "531";
     string input = "";
+
     bool isUnlocked = false;
     public bool IsUnlocked { get => isUnlocked;}
 
@@ -31,28 +32,30 @@ public class BikeLock : MonoBehaviour
 
 	if(isUnlocked == false)
 	{
-	    input+=str;
+	    input += str;
+
 	    if(input == answer)
 	    {
-		SolveAndOpen();
+		    SolveAndOpen();
 	    }
 	    else if (input.Length >= 3)
 	    {
-		input = "";
+	    	input = "";
 	    }
 	}
-	if(text)
-	{
-	    text.text = input;
-	}
+        if(text)
+        {
+            text.text = input;
+        }
     }
 
     public void SolveAndOpen()
     {
         //once solved, unlock the bikelock
         //and allow the cabinet to be opened
-	isUnlocked=true;
-	bikelock.SetActive(false);
-	cabinet.GetComponent<BoxCollider2D>().enabled = true;
+        isUnlocked = true;
+        bikelock.SetActive(false);
+        cabinet.GetComponent<BoxCollider2D>().enabled = true;
+        SavedState.bathroomLockSolved = true;
     }
 }
