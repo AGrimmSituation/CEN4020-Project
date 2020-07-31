@@ -261,7 +261,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 32f4ecb22cf9f3f4c8b1565657f9a085, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 419647c843528a647b5b773df57a101a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -280,8 +280,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420901522}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.28223285, y: -0.7042952, z: 144.72324}
-  m_LocalScale: {x: 0.9891892, y: 0.994012, z: 1}
+  m_LocalPosition: {x: -0.112, y: -0.86, z: 144.72324}
+  m_LocalScale: {x: 0.90601885, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 2085857808}
   m_RootOrder: 0
@@ -537,7 +537,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 47cad689573734146b4507432402a266, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34bac6f1d2ba3734ea1a1b7b78495c25, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -556,8 +556,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870145018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08, y: 0.02, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.02, y: 0.07, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -588,18 +588,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.042896748}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.74, y: 7.68}
+    oldSize: {x: 19.2, y: 10.8}
     newSize: {x: 10.74, y: 7.68}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.74, y: 7.5942063}
+  m_Size: {x: 19.2, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &2085857807
 GameObject:
